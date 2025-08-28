@@ -13,25 +13,25 @@ const compareStore = useCompareStore()
   <div>
     <div class="layer-group mb-1">
       <v-checkbox
-            v-model="layersStore.selectedLayers"
-            :value="'baselayer'"
-            :disabled="
-              !layersStore.selectedLayers.includes('baselayer') &&
-              layersStore.selectedLayers.length >= compareStore.layerLimit
-            "
-            density="compact"
-            :hide-details="true"
-          >
-            <template #label>
-              <h5 class="text-uppercase mb-0">Base Layer</h5>
-            </template>
-            <!-- <template #append>
+        v-model="layersStore.selectedLayers"
+        :value="'baselayer'"
+        :disabled="
+          !layersStore.selectedLayers.includes('baselayer') &&
+          layersStore.selectedLayers.length >= compareStore.layerLimit
+        "
+        density="compact"
+        :hide-details="true"
+      >
+        <template #label>
+          <h5 class="text-uppercase mb-0">Base Layer</h5>
+        </template>
+        <!-- <template #append>
               <info-tooltip
                 >{{ item.info }}
                 {{ item.attribution ? 'Source: ' + item.attribution : '' }}</info-tooltip
               >
             </template> -->
-          </v-checkbox>
+      </v-checkbox>
     </div>
     <div v-for="group in layersStore.layerGroups" :key="group.id" class="layer-group mb-1">
       <!-- Group Header with Toggle -->

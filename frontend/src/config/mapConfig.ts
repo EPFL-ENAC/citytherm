@@ -93,7 +93,7 @@ export const urbanMorphologyLayers = (city: CityKey = 'geneva'): MapLayerConfig[
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -137,7 +137,7 @@ export const urbanMorphologyLayers = (city: CityKey = 'geneva'): MapLayerConfig[
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -181,7 +181,7 @@ export const urbanMorphologyLayers = (city: CityKey = 'geneva'): MapLayerConfig[
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -225,7 +225,7 @@ export const urbanMorphologyLayers = (city: CityKey = 'geneva'): MapLayerConfig[
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -275,7 +275,7 @@ export const landCoverFractionLayers = (city: CityKey = 'geneva'): MapLayerConfi
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -319,7 +319,7 @@ export const landCoverFractionLayers = (city: CityKey = 'geneva'): MapLayerConfi
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -363,7 +363,7 @@ export const landCoverFractionLayers = (city: CityKey = 'geneva'): MapLayerConfi
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -407,7 +407,7 @@ export const landCoverFractionLayers = (city: CityKey = 'geneva'): MapLayerConfi
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -457,7 +457,7 @@ export const canyonIntersectionLayers = (city: CityKey = 'geneva'): MapLayerConf
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -507,7 +507,7 @@ export const canyonLengthLayers = (city: CityKey = 'geneva'): MapLayerConfig[] =
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -551,7 +551,7 @@ export const canyonLengthLayers = (city: CityKey = 'geneva'): MapLayerConfig[] =
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -587,7 +587,7 @@ export const canyonLengthLayers = (city: CityKey = 'geneva'): MapLayerConfig[] =
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -633,14 +633,13 @@ export const localClimateZoneLayers = (city: CityKey = 'geneva'): MapLayerConfig
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
     }
   ]
 }
-
 
 export const defaultGridLayers = (city: CityKey = 'geneva'): MapLayerConfig[] => {
   const config = getGridDataConfig(city)
@@ -722,7 +721,7 @@ export const irradianceLayers = (city: CityKey = 'geneva'): MapLayerConfig[] => 
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -772,7 +771,7 @@ export const irradianceLayers = (city: CityKey = 'geneva'): MapLayerConfig[] => 
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ffffff', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
@@ -852,7 +851,7 @@ export const landSurfaceTemperatureLayers = (city: CityKey = 'geneva'): MapLayer
             'case',
             ['boolean', ['feature-state', 'hover'], false],
             '#ff0000', // White outline when hovered
-            '#000000'  // Black outline normally
+            '#000000' // Black outline normally
           ]
         }
       } as LayerSpecification
