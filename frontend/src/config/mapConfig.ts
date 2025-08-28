@@ -641,6 +641,36 @@ export const localClimateZoneLayers = (city: CityKey = 'geneva'): MapLayerConfig
   ]
 }
 
+
+export const defaultGridLayers = (city: CityKey = 'geneva'): MapLayerConfig[] => {
+  const config = getGridDataConfig(city)
+  return [
+    {
+      id: 'baselayer',
+      label: 'Base Layer',
+      unit: 'category',
+      info: 'Base layer for the grid data',
+      source: {
+        type: 'vector',
+        attribution: 'CityTherm Local Climate Zone Data',
+        url: `pmtiles://${baseUrl}/${config.gridFile}`,
+        minzoom: 5
+      } as VectorSourceSpecification,
+      layer: {
+        id: 'baselayer',
+        type: 'fill',
+        source: 'baselayer',
+        'source-layer': config.sourceLayer,
+        paint: {
+          'fill-color': '#FFFFFF',
+          'fill-opacity': 0.8,
+          'fill-outline-color': '#000000'
+        }
+      } as LayerSpecification
+    }
+  ]
+}
+
 export const irradianceLayers = (city: CityKey = 'geneva'): MapLayerConfig[] => {
   const config = getGridDataConfig(city)
   // CLIMATIC CONDITIONS
@@ -906,6 +936,7 @@ export const getLayerGroups = (city: CityKey = 'geneva') => [
 export const getMapConfig = (city: CityKey = 'geneva') => ({
   baseUrl: baseUrlOptions,
   layers: [
+    ...defaultGridLayers(city),
     // Urban morphology (place LCZ typology first inside the group)
     ...localClimateZoneLayers(city),
     ...urbanMorphologyLayers(city),
